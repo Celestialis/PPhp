@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image gallery</title>
+    <style>
+        .preview { display: block; float: left; margin: 5px; }
+        .preview img { max-width: 250px; }
+    </style>
+</head>
+<body>
+    {% if one %}
+        {% include 'one.twig' %}
+    {% else %}
+        {% include 'preview.twig' %}
+    {% endif %}
+
+</body>
+</html>
